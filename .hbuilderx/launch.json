@@ -1,0 +1,21 @@
+{
+    "version" : "1.0",
+    "configurations" : [
+        {
+            "customPlaygroundType" : "local",
+            "playground" : "custom",
+            "type" : "uni-app:app-ios"
+        },
+        {
+            "customPlaygroundType" : "device",
+            "playground" : "standard",
+            "type" : "uni-app:app-ios_simulator"
+        },
+        {
+            "customPlaygroundType" : "local",
+            "packageName" : "com.moods.app",
+            "playground" : "custom",
+            "type" : "uni-app:app-android"
+        }
+    ]
+}

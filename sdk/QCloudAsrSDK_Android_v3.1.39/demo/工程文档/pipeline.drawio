@@ -1,0 +1,239 @@
+<mxfile host="65bd71144e">
+    <diagram id="vuutoelWodMVeEfSR4kq" name="Page-1">
+        <mxGraphModel dx="1861" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="26" value="实时语音识别" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-240" y="80" width="640" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="73" target="21" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="80" y="290"/>
+                            <mxPoint x="-120" y="290"/>
+                        </Array>
+                        <mxPoint x="-120" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="73" target="84" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="80" y="290"/>
+                            <mxPoint x="290" y="290"/>
+                        </Array>
+                        <mxPoint x="210" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="101" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="2" target="73">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="140" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="7" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="创建&lt;br&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;AAIClient&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#1C464A;" parent="1" source="11" target="53" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="开始识别&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;p style=&quot;border-color: var(--border-color); font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; margin: 0px; background-color: rgb(255, 255, 255); text-align: start;&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px; text-align: center;&quot;&gt;AAIClient&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-40" y="690" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="12" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="停止识别&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;p style=&quot;border-color: var(--border-color); font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; margin: 0px; background-color: rgb(255, 255, 255); text-align: start;&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px; text-align: center;&quot;&gt;AAIClient&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-40" y="880" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="960" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="21" target="88">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="麦克风权限申请" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-200" y="330" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#1C464A;" parent="1" source="29" target="75" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="140" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="30" target="32" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;&lt;font&gt;创建&lt;/font&gt;&lt;/p&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;QCloudOneSentenceRecognizer&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="280" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="31" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;创建并配置&lt;/p&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;QCloudOneSentenceRecognitionParams&lt;/div&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;(可选)&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="440" width="280" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="32" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;配置&lt;/p&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;QCloudOneSentenceRecognizerListener&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="360" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="33" target="35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="开始识别&lt;br&gt;&lt;span style=&quot;font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;QCloudOneSentenceRecognizer&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="440" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="35" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="停止识别&lt;br&gt;&lt;span style=&quot;font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;QCloudOneSentenceRecognizer&lt;/span&gt;&lt;span style=&quot;font-family: Menlo; font-size: 13px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;(仅使用内置录音时调用)&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="520" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="680" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="一句话识别" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="80" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="录音文件识别极速版" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry y="1160" width="310" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;startArrow=none;" parent="1" source="79" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="46" target="79" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="1220" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="47" target="51" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="创建&lt;br&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;QCloudFlashRecognizer&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1360" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="48" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="410" y="1550"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;创建&lt;/p&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;QCloudFlashRecognitionParams&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="1440" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="49" target="62" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;开始识别&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;QCloudFlashRecognizer&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1520" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="51" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;配置&lt;/p&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;QCloudFlashRecognizerListener&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1440" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#1C464A;" parent="1" source="53" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;font color=&quot;#000000&quot;&gt;回调识别结果&lt;br&gt;&lt;span style=&quot;font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;AudioRecognizeResultListener&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#1C464A;" parent="1" vertex="1">
+                    <mxGeometry x="-40" y="790" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="56" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;回调识别结果&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;QCloudOneSentenceRecognizerListener&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="600" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="62" target="63" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;回调识别结果&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: Menlo; background-color: rgb(255, 255, 255);&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;QCloudFlashRecognizerListener&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1600" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="1680" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="73" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="&lt;font color=&quot;#000000&quot;&gt;导入SDK&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#1C464A;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="75" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="75" target="31">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1020" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="75" value="&lt;font&gt;导入SDK&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="79" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="1430" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="410" y="1340"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="导入SDK" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="1280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="83">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="80" y="690" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-120" y="650"/>
+                            <mxPoint x="80" y="650"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font face=&quot;Consolas, 楷体, Courier New, monospace, Menlo, Monaco, Courier New, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;创建&lt;br&gt;AudioRecognizeRequest&lt;br&gt;(配置后端请求参数)&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-220" y="570" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="84" target="85">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;创建&lt;br&gt;AudioRecognizeConfiguration&lt;br&gt;(配置本地参数)&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="410" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="85" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;/pre&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;创建&lt;br&gt;AudioRecognizeStateListener&lt;br&gt;(识别状态回调)&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="490" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="86">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="80" y="690" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="290" y="650"/>
+                            <mxPoint x="80" y="650"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="86" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;/pre&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;创建&lt;br&gt;AudioRecognizeResultListener&lt;br&gt;(识别结果回调)&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="570" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="88" target="83">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, 楷体, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;&lt;div style=&quot;&quot;&gt;创建并配置PcmAudioDataSource&lt;/div&gt;&lt;div style=&quot;&quot;&gt;(提供麦克风录音源及AEC数据源示例)&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="410" width="160" height="130" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

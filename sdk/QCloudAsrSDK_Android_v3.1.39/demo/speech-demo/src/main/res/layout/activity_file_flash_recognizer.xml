@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/recognize_flash_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="recognize(data)"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/recognize_start_record"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="startRecord"
+        android:textAllCaps="false" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/recognize_flash_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:gravity="start" />
+    </ScrollView>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/rotateloading"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center" />
+</LinearLayout>

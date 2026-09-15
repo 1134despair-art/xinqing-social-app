@@ -1,0 +1,71 @@
+{
+  "name": "uniapp-demo",
+  "version": "1.0.1",
+  "description": "一个功能完整的UniApp移动端应用模板，支持多端适配和响应式设计",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "node ./scripts/patch-vite-node16-crypto.cjs && node ./scripts/patch-uni-app-appwatcher.cjs",
+    "dev:h5": "UNI_INPUT_DIR=. uni build --watch",
+    "dev:mp-weixin": "UNI_INPUT_DIR=. uni build -p mp-weixin --watch",
+    "dev:mp-alipay": "UNI_INPUT_DIR=. uni build -p mp-alipay --watch",
+    "dev:mp-baidu": "UNI_INPUT_DIR=. uni build -p mp-baidu --watch",
+    "dev:mp-toutiao": "UNI_INPUT_DIR=. uni build -p mp-toutiao --watch",
+    "dev:mp-qq": "UNI_INPUT_DIR=. uni build -p mp-qq --watch",
+    "dev:app": "UNI_INPUT_DIR=. uni build -p app --watch",
+    "build:h5": "UNI_INPUT_DIR=. uni build",
+    "build:mp-weixin": "UNI_INPUT_DIR=. uni build -p mp-weixin",
+    "build:mp-alipay": "UNI_INPUT_DIR=. uni build -p mp-alipay",
+    "build:mp-baidu": "UNI_INPUT_DIR=. uni build -p mp-baidu",
+    "build:mp-toutiao": "UNI_INPUT_DIR=. uni build -p mp-toutiao",
+    "build:mp-qq": "UNI_INPUT_DIR=. uni build -p mp-qq",
+    "build:app": "UNI_INPUT_DIR=. uni build -p app",
+    "serve": "npm run dev:h5",
+    "preview": "UNI_INPUT_DIR=. vite preview",
+    "iconfont:build": "node ./scripts/build-iconfont.cjs",
+    "app-icons:build": "python3 ./scripts/build-app-icons.py"
+  },
+  "keywords": [
+    "uniapp",
+    "vue3",
+    "vite",
+    "mobile",
+    "responsive",
+    "cross-platform"
+  ],
+  "author": "UniApp Demo",
+  "license": "MIT",
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-4020920240930001",
+    "@dcloudio/uni-app-plus": "3.0.0-4020920240930001",
+    "@dcloudio/uni-components": "3.0.0-4020920240930001",
+    "@dcloudio/uni-h5": "3.0.0-4020920240930001",
+    "@dcloudio/uni-mp-alipay": "3.0.0-4020920240930001",
+    "@dcloudio/uni-mp-baidu": "3.0.0-4020920240930001",
+    "@dcloudio/uni-mp-qq": "3.0.0-4020920240930001",
+    "@dcloudio/uni-mp-toutiao": "3.0.0-4020920240930001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-4020920240930001",
+    "echarts": "^6.0.0",
+    "tim-js-sdk": "^2.27.6",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.9.1"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.8",
+    "@dcloudio/uni-automator": "3.0.0-4020920240930001",
+    "@dcloudio/uni-cli-shared": "3.0.0-4020920240930001",
+    "@dcloudio/uni-uts-v1": "^3.0.0-4020920240930001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4020920240930001",
+    "@types/node": "^20.10.6",
+    "@vue/tsconfig": "^0.5.1",
+    "baseline-browser-mapping": "^2.8.32",
+    "sass": "^1.77.6",
+    "typescript": "^5.3.3",
+    "vite": "^5.2.8"
+  },
+  "uni-app": {
+    "scripts": {}
+  },
+  "engines": {
+    "node": ">=16.14.0"
+  }
+}

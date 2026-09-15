@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"/>
+<!--    <CheckBox-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/checkbox"-->
+<!--        android:text="设备授权"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+</LinearLayout>

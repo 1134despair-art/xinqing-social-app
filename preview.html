@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniApp Demo - 项目预览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        
+        .app {
+            max-width: 375px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .nav {
+            height: 44px;
+            background: #007AFF;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .content {
+            padding-bottom: 60px;
+        }
+        
+        .swiper {
+            height: 200px;
+            background: linear-gradient(45deg, #007AFF, #5AC8FA);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 16px;
+            position: relative;
+        }
+        
+        .swiper-dots {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+        }
+        
+        .dot.active {
+            background: white;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .grid-item {
+            text-align: center;
+            padding: 16px 8px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .grid-icon {
+            width: 32px;
+            height: 32px;
+            background: #007AFF;
+            border-radius: 50%;
+            margin: 0 auto 8px;
+        }
+        
+        .grid-text {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .list {
+            background: white;
+            margin: 0 16px 16px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .list-item {
+            padding: 16px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .list-item:last-child {
+            border-bottom: none;
+        }
+        
+        .list-item:hover {
+            background: #f8f8f8;
+        }
+        
+        .list-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #007AFF;
+            margin-right: 12px;
+        }
+        
+        .list-content {
+            flex: 1;
+        }
+        
+        .list-title {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        
+        .list-desc {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .list-arrow {
+            color: #ccc;
+        }
+        
+        .tabbar {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 375px;
+            height: 60px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+        }
+        
+        .tab-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .tab-item.active .tab-text {
+            color: #007AFF;
+        }
+        
+        .tab-icon {
+            width: 24px;
+            height: 24px;
+            background: #ccc;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+        
+        .tab-item.active .tab-icon {
+            background: #007AFF;
+        }
+        
+        .tab-text {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .profile-header {
+            background: linear-gradient(45deg, #007AFF, #5AC8FA);
+            color: white;
+            padding: 32px 16px;
+            text-align: center;
+        }
+        
+        .profile-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            margin: 0 auto 16px;
+        }
+        
+        .profile-name {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        
+        .profile-desc {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background: white;
+            margin: -20px 16px 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .stat-item {
+            padding: 16px;
+            text-align: center;
+            border-right: 1px solid #f0f0f0;
+        }
+        
+        .stat-item:last-child {
+            border-right: none;
+        }
+        
+        .stat-number {
+            font-size: 18px;
+            font-weight: 500;
+            color: #007AFF;
+            margin-bottom: 4px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .page {
+            display: none;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        .section-title {
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <!-- 导航栏 -->
+        <div class="nav" id="nav-title">首页</div>
+        
+        <!-- 首页 -->
+        <div class="page active" id="index-page">
+            <div class="content">
+                <!-- 轮播图 -->
+                <div class="swiper">
+                    <div>精彩内容轮播</div>
+                    <div class="swiper-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                
+                <!-- 功能网格 -->
+                <div class="grid">
+                    <div class="grid-item">
+                        <div class="grid-icon"></div>
+                        <div class="grid-text">扫一扫</div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-icon"></div>
+                        <div class="grid-text">付款码</div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-icon"></div>
+                        <div class="grid-text">充值</div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-icon"></div>
+                        <div class="grid-text">更多</div>
+                    </div>
+                </div>
+                
+                <!-- 内容列表 -->
+                <div class="section-title">推荐内容</div>
+                <div class="list">
+                    <div class="list-item">
+                        <div class="list-avatar"></div>
+                        <div class="list-content">
+                            <div class="list-title">热门推荐</div>
+                            <div class="list-desc">精选优质内容推荐</div>
+                        </div>
+                        <div class="list-arrow">></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-avatar"></div>
+                        <div class="list-content">
+                            <div class="list-title">最新资讯</div>
+                            <div class="list-desc">了解最新动态信息</div>
+                        </div>
+                        <div class="list-arrow">></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-avatar"></div>
+                        <div class="list-content">
+                            <div class="list-title">活动专区</div>
+                            <div class="list-desc">参与精彩活动</div>
+                        </div>
+                        <div class="list-arrow">></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 个人中心 -->
+        <div class="page" id="profile-page">
+            <div class="content">
+                <!-- 用户信息 -->
+                <div class="profile-header">
+                    <div class="profile-avatar"></div>
+                    <div class="profile-name">用户昵称</div>
+                    <div class="profile-desc">点击登录获取更多功能</div>
+                </div>
+                
+                <!-- 统计数据 -->
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">128</div>
+                        <div class="stat-label">积分</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">优惠券</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">23</div>
+                        <div class="stat-label">收藏</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">订单</div>
+                    </div>
+                </div>
+                
+                <!-- 功能列表 -->
+                <div class="section-title">我的服务</div>
+                <div class="list">
+                    <div class="list-item">
+                        <div class="list-avatar"></div>
+                        <div class="list-content">
+                            <div class="list-title">我的订单</div>
+                            <div class="list-desc">查看订单状态</div>
+                        </div>
+                        <div class="list-arrow">></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-avatar"></div>
+                        <div class="list-content">
+                            <div class="list-title">我的收藏</div>
+                            <div class="list-desc">管理收藏内容</div>
+                        </div>
+                        <div class="list-arrow">></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-avatar"></div>
+                        <div class="list-content">
+                            <div class="list-title">设置</div>
+                            <div class="list-desc">个人设置和偏好</div>
+                        </div>
+                        <div class="list-arrow">></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 底部导航 -->
+        <div class="tabbar">
+            <div class="tab-item active" onclick="switchTab('index')">
+                <div class="tab-icon"></div>
+                <div class="tab-text">首页</div>
+            </div>
+            <div class="tab-item" onclick="switchTab('profile')">
+                <div class="tab-icon"></div>
+                <div class="tab-text">我的</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function switchTab(tab) {
+            // 隐藏所有页面
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // 移除所有tab的active状态
+            document.querySelectorAll('.tab-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // 显示对应页面
+            document.getElementById(tab + '-page').classList.add('active');
+            
+            // 激活对应tab
+            event.currentTarget.classList.add('active');
+            
+            // 更新导航标题
+            const titles = {
+                'index': '首页',
+                'profile': '我的'
+            };
+            document.getElementById('nav-title').textContent = titles[tab];
+        }
+        
+        // 添加一些交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 轮播图自动切换
+            let currentDot = 0;
+            const dots = document.querySelectorAll('.dot');
+            
+            setInterval(() => {
+                dots[currentDot].classList.remove('active');
+                currentDot = (currentDot + 1) % dots.length;
+                dots[currentDot].classList.add('active');
+            }, 3000);
+            
+            // 列表项点击效果
+            document.querySelectorAll('.list-item, .grid-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

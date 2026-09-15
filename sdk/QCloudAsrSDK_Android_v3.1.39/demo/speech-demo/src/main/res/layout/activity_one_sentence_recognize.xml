@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/recognize_ur_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="recognize(url)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/recognize_ur_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recognize(data)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/recognize_start_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="startRecord"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/recognize_start_record_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="startRecord(MediaRecorder)"
+        android:textAllCaps="false" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recognize_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="8sp"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/rotateloading"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+
+</LinearLayout>

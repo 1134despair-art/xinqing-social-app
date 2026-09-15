@@ -1,0 +1,10 @@
+/node_modules/*
+/.pnpm-store/
+/dist/*
+.DS_Store
+/unpackage/*
+/utils/tencentSpeechAsr.dev.local.js
+/pnpm-workspace.yaml
+
+.idea/*
+.idea/workspace.xml

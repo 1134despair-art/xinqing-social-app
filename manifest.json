@@ -1,0 +1,124 @@
+{
+    "name" : "橘子圆梦",
+    "appid" : "__UNI__FB205FD",
+    "description" : "社交心情",
+    "versionName" : "1.0.14",
+    "versionCode" : 119,
+    "transformPx" : false,
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Camera" : {},
+            "Gallery" : {},
+            "Record" : {},
+            "VideoPlayer" : {},
+            "Webview-x5" : {}
+        },
+        "distribute" : {
+            "icons" : {
+                "android" : {
+                    "hdpi" : "static/app-icons/android/hdpi.png",
+                    "xhdpi" : "static/app-icons/android/xhdpi.png",
+                    "xxhdpi" : "static/app-icons/android/xxhdpi.png",
+                    "xxxhdpi" : "static/app-icons/android/xxxhdpi.png"
+                },
+                "ios" : {
+                    "appstore" : "static/app-icons/ios/appstore.png",
+                    "iphone" : {
+                        "app@2x" : "static/app-icons/ios/iphone/app@2x.png",
+                        "app@3x" : "static/app-icons/ios/iphone/app@3x.png",
+                        "spotlight@2x" : "static/app-icons/ios/iphone/spotlight@2x.png",
+                        "spotlight@3x" : "static/app-icons/ios/iphone/spotlight@3x.png",
+                        "settings@2x" : "static/app-icons/ios/iphone/settings@2x.png",
+                        "settings@3x" : "static/app-icons/ios/iphone/settings@3x.png",
+                        "notification@2x" : "static/app-icons/ios/iphone/notification@2x.png",
+                        "notification@3x" : "static/app-icons/ios/iphone/notification@3x.png"
+                    },
+                    "ipad" : {
+                        "app" : "static/app-icons/ios/ipad/app.png",
+                        "app@2x" : "static/app-icons/ios/ipad/app@2x.png",
+                        "proapp@2x" : "static/app-icons/ios/ipad/proapp@2x.png",
+                        "spotlight" : "static/app-icons/ios/ipad/spotlight.png",
+                        "spotlight@2x" : "static/app-icons/ios/ipad/spotlight@2x.png",
+                        "settings" : "static/app-icons/ios/ipad/settings.png",
+                        "settings@2x" : "static/app-icons/ios/ipad/settings@2x.png",
+                        "notification" : "static/app-icons/ios/ipad/notification.png",
+                        "notification@2x" : "static/app-icons/ios/ipad/notification@2x.png"
+                    }
+                }
+            },
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\" android:required=\"false\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>"
+                ]
+            },
+            "ios" : {
+                "dSYMs" : false,
+                "privacyDescription" : {
+                    "NSMicrophoneUsageDescription" : "需要使用麦克风录制语音心情",
+                    "NSCameraUsageDescription" : "需要使用相机拍摄头像或发布相关图片/视频",
+                    "NSPhotoLibraryUsageDescription" : "需要访问相册以选择头像或发布图片/视频",
+                    "NSPhotoLibraryAddUsageDescription" : "需要将拍摄的图片保存到相册"
+                }
+            },
+            "sdkConfigs" : {},
+            "splashscreen" : {
+                "useOriginalMsgbox" : true
+            }
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "3",
+    "h5" : {
+        "title" : "心情星球",
+        "router" : {
+            "mode" : "hash"
+        }
+    }
+}

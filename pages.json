@@ -1,0 +1,154 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "心情星球",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/publish/publish",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "发布内容"
+			}
+		},
+		{
+			"path": "pages/space/detail",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "动态详情"
+			}
+		},
+		{
+			"path": "pages/space/space",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "心情广场",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/settings/settings",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "消息中心"
+			}
+		},
+		{
+			"path": "pages/settings/edit-profile",
+			"style": {
+				"navigationBarTitleText": "编辑资料",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/settings/about",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/profile/sub",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/match/match",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "在线客服"
+			}
+		},
+		{
+			"path": "pages/match/chat",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "客服会话",
+				"mp-weixin": {
+					"disableScroll": true
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "心情星球",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#fffcfd",
+		"app-plus": {
+			"softinputMode": "adjustNothing"
+		}
+	},
+	"tabBar": {
+		"color": "#9f92a2",
+		"selectedColor": "#8f6fb0",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png",
+				"text": "梦"
+			},
+			{
+				"pagePath": "pages/space/space",
+				"iconPath": "static/tabbar/earth.png",
+				"selectedIconPath": "static/tabbar/earth-active.png",
+				"text": "梦空间"
+			},
+			{
+				"pagePath": "pages/publish/publish",
+				"iconPath": "static/tabbar/publish.png",
+				"selectedIconPath": "static/tabbar/publish-active.png",
+				"text": "发布"
+			},
+			{
+				"pagePath": "pages/match/match",
+				"iconPath": "static/tabbar/match.png",
+				"selectedIconPath": "static/tabbar/match-active.png",
+				"text": "筑梦师"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"iconPath": "static/tabbar/profile.png",
+				"selectedIconPath": "static/tabbar/profile-active.png",
+				"text": "我"
+			}
+		]
+	},
+	"uniIdRouter": {},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "pages/login/login", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
