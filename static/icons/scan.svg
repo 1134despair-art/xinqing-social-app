@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 扫描框 -->
+  <rect x="8" y="8" width="32" height="32" rx="4" stroke="#4A90E2" stroke-width="2" fill="none"/>
+  
+  <!-- 扫描线 -->
+  <line x1="12" y1="24" x2="36" y2="24" stroke="#4A90E2" stroke-width="2"/>
+  
+  <!-- 四个角的装饰 -->
+  <path d="M8 16V12C8 9.79086 9.79086 8 12 8H16" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+  <path d="M32 8H36C38.2091 8 40 9.79086 40 12V16" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 32V36C40 38.2091 38.2091 40 36 40H32" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+  <path d="M16 40H12C9.79086 40 8 38.2091 8 36V32" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+</svg>

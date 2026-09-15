@@ -1,0 +1,35 @@
+<svg width="375" height="200" viewBox="0 0 375 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffecd2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fcb69f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="375" height="200" fill="url(#grad3)"/>
+  
+  <!-- 装饰元素 -->
+  <polygon points="50,40 70,20 90,40 70,60" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="300,150 320,130 340,150 320,170" fill="rgba(255,255,255,0.2)"/>
+  
+  <!-- 圆形装饰 -->
+  <circle cx="320" cy="50" r="20" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="60" cy="150" r="30" fill="rgba(255,255,255,0.15)"/>
+  
+  <!-- 主标题 -->
+  <text x="187.5" y="80" text-anchor="middle" fill="#8B4513" font-size="28" font-weight="bold" font-family="Arial, sans-serif">
+    生活服务
+  </text>
+  
+  <!-- 副标题 -->
+  <text x="187.5" y="110" text-anchor="middle" fill="#8B4513" font-size="16" font-family="Arial, sans-serif">
+    便民服务 一站式体验
+  </text>
+  
+  <!-- 按钮 -->
+  <rect x="137.5" y="130" width="100" height="35" rx="17.5" fill="#8B4513" fill-opacity="0.8"/>
+  <text x="187.5" y="152" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial, sans-serif">
+    立即体验
+  </text>
+</svg>

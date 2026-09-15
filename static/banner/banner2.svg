@@ -1,0 +1,35 @@
+<svg width="375" height="200" viewBox="0 0 375 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="375" height="200" fill="url(#grad2)"/>
+  
+  <!-- 科技装饰元素 -->
+  <rect x="30" y="30" width="60" height="60" rx="10" fill="rgba(255,255,255,0.1)" transform="rotate(15 60 60)"/>
+  <rect x="280" y="120" width="40" height="40" rx="8" fill="rgba(255,255,255,0.15)" transform="rotate(-20 300 140)"/>
+  
+  <!-- 圆形装饰 -->
+  <circle cx="320" cy="40" r="15" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="40" cy="160" r="25" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- 主标题 -->
+  <text x="187.5" y="75" text-anchor="middle" fill="white" font-size="26" font-weight="bold" font-family="Arial, sans-serif">
+    智能生活
+  </text>
+  
+  <!-- 副标题 -->
+  <text x="187.5" y="105" text-anchor="middle" fill="white" font-size="16" font-family="Arial, sans-serif">
+    科技改变未来
+  </text>
+  
+  <!-- 按钮 -->
+  <rect x="137.5" y="130" width="100" height="35" rx="17.5" fill="white" fill-opacity="0.9"/>
+  <text x="187.5" y="152" text-anchor="middle" fill="#667eea" font-size="14" font-weight="bold" font-family="Arial, sans-serif">
+    探索更多
+  </text>
+</svg>
