@@ -1,0 +1,82 @@
+import { StartRealtimeRecognize, StopRealtimeRecognize, CancelRealtimeRecognize, IsRealtimeRecognizeSupported, IsRealtimeRecognizing, TencentSpeechRealtimeOptions } from '../interface.uts'
+import { TencentSpeechRealtimeFailImpl } from '../unierror.uts'
+import { TencentSpeechAsrNative } from 'uts.sdk.modules.tencentSpeechAsr'
+
+function emitError(options : TencentSpeechRealtimeOptions, errCode : number, errMsg : string, details : any | null = null) : void {
+	options.onError?.(new TencentSpeechRealtimeFailImpl(errCode, errMsg, details))
+}
+
+export const isRealtimeRecognizeSupported : IsRealtimeRecognizeSupported = function() : boolean {
+	return true
+}
+
+export const isRealtimeRecognizing : IsRealtimeRecognizing = function() : boolean {
+	return TencentSpeechAsrNative.isRecognizing()
+}
+
+@UTSJS.keepAlive
+
+export function startRealtimeRecognize(options : TencentSpeechRealtimeOptions) : void {
+	const credential = options.credential
+	if (credential == null) {
+		emitError(options, 2001, '缺少腾讯云实时语音凭证')
+		return
+	}
+	if (credential.appId <= 0 || credential.secretId.length == 0 || credential.secretKey.length == 0) {
+		emitError(options, 2002, '腾讯云实时语音凭证不完整')
+		return
+	}
+	const started = TencentSpeechAsrNative.startRecognize(
+		credential.appId,
+		credential.secretId,
+		credential.secretKey,
+		credential.token == null ? '' : credential.token!,
+		credential.projectId == null ? 0 : credential.projectId!,
+		options.engineModelType == null ? '16k_zh' : options.engineModelType!,
+		options.filterDirty == null ? 0 : options.filterDirty!,
+		options.filterModal == null ? 0 : options.filterModal!,
+		options.filterPunc == null ? 0 : options.filterPunc!,
+		options.convertNumMode == null ? 1 : options.convertNumMode!,
+		options.needvad == null ? 1 : options.needvad!,
+		options.wordInfo == null ? 0 : options.wordInfo!,
+		options.noiseThreshold == null ? 0 : options.noiseThreshold!,
+		options.maxSpeakTime == null ? 0 : options.maxSpeakTime!,
+		options.hotwordId == null ? '' : options.hotwordId!,
+		options.customizationId == null ? '' : options.customizationId!,
+		options.host == null ? '' : options.host!,
+		options.enableDetectVolume == true,
+		options.endRecognizeWhenDetectSilence == true,
+		options.endRecognizeWhenDetectSilenceAutoStop != false,
+		options.silenceDetectDuration == null ? 5000 : options.silenceDetectDuration!,
+		options.sliceTime == null ? 40 : options.sliceTime!,
+		options.requestTimeout == null ? 5 : options.requestTimeout!,
+		options.compress != false,
+		options.shouldSaveAsFile == true,
+		options.saveFilePath == null ? '' : options.saveFilePath!,
+		options.onSliceRecognize,
+		options.onSegmentRecognize,
+		options.onFinish,
+		function(err : UTSJSONObject) {
+			const message = err.getString('message')
+			emitError(options, 2006, message == null || message.length == 0 ? '腾讯实时识别失败' : message, err)
+		},
+		options.onStartRecord,
+		options.onStopRecord,
+		options.onVolumeChange,
+		options.onFlowStart,
+		options.onFlowEnd,
+		options.onSilentDetectTimeout,
+		options.onAudioSaved
+	)
+	if (!started) {
+		emitError(options, 2006, '启动腾讯实时语音识别失败')
+	}
+}
+
+export const stopRealtimeRecognize : StopRealtimeRecognize = function() : boolean {
+	return TencentSpeechAsrNative.stopRecognize()
+}
+
+export const cancelRealtimeRecognize : CancelRealtimeRecognize = function() : boolean {
+	return TencentSpeechAsrNative.cancelRecognize()
+}

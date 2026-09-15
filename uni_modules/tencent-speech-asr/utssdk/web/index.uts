@@ -1,0 +1,22 @@
+import { IsRealtimeRecognizeSupported, IsRealtimeRecognizing, StartRealtimeRecognize, StopRealtimeRecognize, CancelRealtimeRecognize } from '../interface.uts'
+import { TencentSpeechRealtimeFailImpl } from '../unierror.uts'
+
+export const isRealtimeRecognizeSupported : IsRealtimeRecognizeSupported = function() : boolean {
+	return false
+}
+
+export const isRealtimeRecognizing : IsRealtimeRecognizing = function() : boolean {
+	return false
+}
+
+export const startRealtimeRecognize : StartRealtimeRecognize = function(options) : void {
+	options.onError?.(new TencentSpeechRealtimeFailImpl(2003, 'H5 不支持腾讯原生实时语音识别 SDK'))
+}
+
+export const stopRealtimeRecognize : StopRealtimeRecognize = function() : boolean {
+	return false
+}
+
+export const cancelRealtimeRecognize : CancelRealtimeRecognize = function() : boolean {
+	return false
+}

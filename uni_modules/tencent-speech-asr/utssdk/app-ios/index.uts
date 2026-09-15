@@ -1,0 +1,28 @@
+import { StopRealtimeRecognize, CancelRealtimeRecognize, IsRealtimeRecognizeSupported, IsRealtimeRecognizing, TencentSpeechRealtimeOptions } from '../interface.uts'
+import { TencentSpeechRealtimeFailImpl } from '../unierror.uts'
+
+function emitError(options : TencentSpeechRealtimeOptions, errCode : number, errMsg : string, details : any | null = null) : void {
+	options.onError?.(new TencentSpeechRealtimeFailImpl(errCode, errMsg, details))
+}
+
+export const isRealtimeRecognizeSupported : IsRealtimeRecognizeSupported = function() : boolean {
+	return false
+}
+
+export const isRealtimeRecognizing : IsRealtimeRecognizing = function() : boolean {
+	return false
+}
+
+@UTSJS.keepAlive
+
+export function startRealtimeRecognize(options : TencentSpeechRealtimeOptions) : void {
+	emitError(options, 2006, 'iOS 未启用腾讯实时语音原生库')
+}
+
+export const stopRealtimeRecognize : StopRealtimeRecognize = function() : boolean {
+	return false
+}
+
+export const cancelRealtimeRecognize : CancelRealtimeRecognize = function() : boolean {
+	return false
+}

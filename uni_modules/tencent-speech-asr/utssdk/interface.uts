@@ -1,0 +1,58 @@
+export type TencentSpeechRealtimeCredential = {
+	appId : number
+	secretId : string
+	secretKey : string
+	token ?: string
+	projectId ?: number
+}
+
+export type TencentSpeechRealtimeResult = UTSJSONObject
+
+export type TencentSpeechRealtimeErrorCode = 2001 | 2002 | 2003 | 2004 | 2005 | 2006
+
+export interface TencentSpeechRealtimeFail extends IUniError {
+	errCode : TencentSpeechRealtimeErrorCode
+	details : any | null
+}
+
+export type TencentSpeechRealtimeOptions = {
+	credential : TencentSpeechRealtimeCredential
+	engineModelType ?: string
+	filterDirty ?: number
+	filterModal ?: number
+	filterPunc ?: number
+	convertNumMode ?: number
+	needvad ?: number
+	wordInfo ?: number
+	noiseThreshold ?: number
+	maxSpeakTime ?: number
+	hotwordId ?: string
+	customizationId ?: string
+	host ?: string
+	enableDetectVolume ?: boolean
+	endRecognizeWhenDetectSilence ?: boolean
+	endRecognizeWhenDetectSilenceAutoStop ?: boolean
+	silenceDetectDuration ?: number
+	sliceTime ?: number
+	requestTimeout ?: number
+	compress ?: boolean
+	shouldSaveAsFile ?: boolean
+	saveFilePath ?: string
+	onSliceRecognize ?: (res : TencentSpeechRealtimeResult) => void
+	onSegmentRecognize ?: (res : TencentSpeechRealtimeResult) => void
+	onFinish ?: (res : TencentSpeechRealtimeResult) => void
+	onError ?: (res : TencentSpeechRealtimeFail) => void
+	onStartRecord ?: () => void
+	onStopRecord ?: () => void
+	onVolumeChange ?: (volume : number) => void
+	onFlowStart ?: (res : TencentSpeechRealtimeResult) => void
+	onFlowEnd ?: (res : TencentSpeechRealtimeResult) => void
+	onSilentDetectTimeout ?: () => void
+	onAudioSaved ?: (res : TencentSpeechRealtimeResult) => void
+}
+
+export type StartRealtimeRecognize = (options : TencentSpeechRealtimeOptions) => void
+export type StopRealtimeRecognize = () => boolean
+export type CancelRealtimeRecognize = () => boolean
+export type IsRealtimeRecognizeSupported = () => boolean
+export type IsRealtimeRecognizing = () => boolean

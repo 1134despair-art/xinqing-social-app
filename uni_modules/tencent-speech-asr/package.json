@@ -1,0 +1,69 @@
+{
+	"id": "tencent-speech-asr",
+	"displayName": "Tencent Speech ASR",
+	"version": "1.0.0",
+	"description": "UTS realtime speech recognizer for Tencent Cloud native SDK",
+	"keywords": [
+		"tencent",
+		"speech",
+		"asr",
+		"uts"
+	],
+	"engines": {
+		"HBuilderX": "^5.07"
+	},
+	"dcloudext": {
+		"type": "uts",
+		"sale": {
+			"regular": {
+				"price": "0.00"
+			},
+			"sourcecode": {
+				"price": "0.00"
+			}
+		},
+		"contact": {
+			"qq": ""
+		},
+		"declaration": {
+			"ads": "",
+			"data": "Uploads audio files to your backend proxy for Tencent ASR.",
+			"permissions": ""
+		},
+		"npmurl": ""
+	},
+	"uni_modules": {
+		"dependencies": [],
+		"encrypt": [],
+		"platforms": {
+			"cloud": {
+				"tcb": "u",
+				"aliyun": "u",
+				"alipay": "u"
+			},
+			"client": {
+				"Vue": {
+					"vue2": "u",
+					"vue3": "u"
+				},
+				"App": {
+					"app-android": "u",
+					"app-ios": "u"
+				},
+				"H5-mobile": {
+					"Safari": "u",
+					"Android Browser": "u",
+					"微信浏览器(Android)": "u",
+					"QQ浏览器(Android)": "u"
+				},
+				"H5-pc": {
+					"Chrome": "u",
+					"IE": "u",
+					"Edge": "u",
+					"Firefox": "u",
+					"Safari": "u"
+				}
+			}
+		}
+	}
+}

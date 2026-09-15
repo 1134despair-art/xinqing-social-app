@@ -1,0 +1,27 @@
+import { TencentSpeechRealtimeErrorCode, TencentSpeechRealtimeFail } from './interface.uts'
+
+export const UniErrorSubject = 'tencent-speech-asr'
+
+export const UniErrors : Map<TencentSpeechRealtimeErrorCode, string> = new Map([
+	[2001, 'credential is required'],
+	[2002, 'appId or secretId or secretKey is invalid'],
+	[2003, 'current platform is not supported'],
+	[2004, 'realtime recognize is already running'],
+	[2005, 'failed to initialize realtime recognize sdk'],
+	[2006, 'failed to start realtime recognize']
+])
+
+export class TencentSpeechRealtimeFailImpl extends UniError implements TencentSpeechRealtimeFail {
+	override errCode : TencentSpeechRealtimeErrorCode
+	details : any | null = null
+
+	constructor(errCode : TencentSpeechRealtimeErrorCode, errMsg : string | null = null, details : any | null = null) {
+		super()
+		this.errSubject = UniErrorSubject
+		this.errCode = errCode
+		this.errMsg = errMsg == null || errMsg.length == 0 ? (UniErrors.get(errCode) ?? '') : errMsg
+		if (details != null) {
+			this.details = details
+		}
+	}
+}
