@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'moodicon';
+	src: url('~@/static/iconfont/moodicon.woff2') format('woff2'),
+		url('~@/static/iconfont/moodicon.woff') format('woff'),
+		url('~@/static/iconfont/moodicon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.iconfont {
+	font-family: 'moodicon' !important;
+	font-style: normal;
+	font-weight: normal;
+	display: inline-block;
+	line-height: 1;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+}

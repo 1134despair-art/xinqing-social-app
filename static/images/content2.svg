@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="contentGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45a049;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="120" height="120" rx="12" fill="url(#contentGrad2)"/>
+  
+  <!-- Vue logo 简化版 -->
+  <polygon points="60,25 40,55 80,55" fill="white"/>
+  <polygon points="60,35 50,50 70,50" fill="#4CAF50"/>
+  
+  <!-- 文字 -->
+  <text x="60" y="80" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">Vue 3</text>
+  <text x="60" y="95" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Composition API</text>
+</svg>

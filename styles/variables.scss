@@ -1,0 +1,74 @@
+// 心情星球主题 — 对齐 H5 参考设计 (localhost:3001)
+
+// 品牌色
+$primary-color: #8f6fb0;
+$primary-soft: #f3e8ff;
+$primary-gradient: linear-gradient(135deg, #efc2d6 0%, #c9b6f7 100%);
+$primary-gradient-alt: linear-gradient(90deg, #f9a8d4 0%, #a78bfa 100%);
+$publish-gradient: linear-gradient(135deg, #ffb36b 0%, #ff7f66 100%);
+
+// 功能色
+$secondary-color: #5d9b7d;
+$danger-color: #d36a86;
+$danger-like: #ea6f88;
+$warning-color: #c6844e;
+$info-color: #a78bfa;
+
+// 文字颜色
+$text-primary: #57465b;
+$text-secondary: #7d6e81;
+$text-tertiary: #9f92a2;
+$text-placeholder: #9f92a2;
+$text-disabled: #c0b8c4;
+$text-dark: #2d2640;
+$text-accent: #594f70;
+
+// 背景色
+$bg-primary: #fffefe;
+$bg-page: #fffcfd;
+$bg-page-gradient: linear-gradient(180deg, #fffcfd 0%, #f9f4fb 100%);
+$bg-secondary: #f7f1f8;
+$bg-tertiary: #fbf7fb;
+$bg-surface-soft: #fbf7fb;
+$bg-surface-muted: #f7f1f8;
+$bg-input: #fcfafc;
+
+// 边框色
+$border-color: #eee4ef;
+$border-strong: #e5d7ea;
+$border-accent: #e8deff;
+$border-light: #f1ebf6;
+
+// 间距
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// 圆角
+$border-radius-sm: 8px;
+$border-radius-md: 16px;
+$border-radius-lg: 22px;
+$border-radius-xl: 32px;
+
+// 字体大小
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+$font-size-xxl: 20px;
+
+// 阴影
+$shadow-soft: 0 6px 16px rgba(120, 96, 130, 0.06);
+$shadow-card: 0 10px 24px rgba(120, 96, 130, 0.08);
+$shadow-raised: 0 14px 30px rgba(112, 87, 124, 0.11);
+$shadow-float: 0 18px 36px rgba(96, 72, 103, 0.14);
+$shadow-sm: $shadow-soft;
+$shadow-md: $shadow-card;
+$shadow-lg: $shadow-raised;
+
+// 自定义 TabBar（120rpx 栏高 + 中间发布钮上凸约 40rpx）
+$tabbar-height: 120rpx;
+$tabbar-clearance: 160rpx;

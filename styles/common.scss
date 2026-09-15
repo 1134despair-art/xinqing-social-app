@@ -1,0 +1,441 @@
+// 变量与响应式混入由 App.vue 中先行 @import，避免在 uni-app+Vite 下嵌套 @import 触发 Sass 解析异常
+
+// 重置样式
+* {
+	box-sizing: border-box;
+}
+
+page {
+	background-color: $bg-page;
+	font-size: $font-size-md;
+	color: $text-primary;
+	line-height: 1.5;
+	height: 100%;
+	min-height: 100%;
+}
+
+.app-container,
+.profile-page,
+.match-page,
+.login-page,
+.page-shell {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.page-shell {
+	display: flex;
+	flex-direction: column;
+	background: #fffcfd;
+	padding-top: calc(env(safe-area-inset-top) + 24rpx);
+}
+
+.page-shell.tab-page {
+	padding-bottom: calc(#{$tabbar-clearance - 40rpx} + env(safe-area-inset-bottom));
+	box-sizing: border-box;
+}
+
+.page-shell.tab-page.publish-tab-page {
+	padding-bottom: 0;
+}
+
+.page-shell.tab-page .auth-card .content-flex {
+	box-sizing: border-box;
+}
+
+.login-page {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.page-shell .auth-card {
+	flex: 1;
+	width: 100%;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	background: #fffdfd;
+	border: 1rpx solid #f1ebf6;
+	border-radius: 56rpx;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.page-shell.tab-page .auth-card {
+	border-radius: 56rpx 56rpx 0 0;
+	border-bottom: none;
+	overflow: visible;
+}
+
+.page-shell .auth-card .header {
+	flex-shrink: 0;
+	background: transparent;
+	border-bottom: 1rpx solid #f1ebf6;
+}
+
+.page-shell .auth-card .content-flex {
+	flex: 1;
+	min-height: 0;
+	height: 0;
+	width: 100%;
+	background: transparent;
+	box-sizing: border-box;
+}
+
+.auth-divider {
+	height: 1rpx;
+	background: linear-gradient(90deg, rgba(232, 222, 255, 0) 0%, #e8deff 50%, rgba(232, 222, 255, 0) 100%);
+}
+
+.page-panel {
+	flex: 1;
+	min-height: 0;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	background: $bg-page-gradient;
+}
+
+// 容器类
+.container {
+	padding: $spacing-md;
+	
+	@include respond-to(md) {
+		padding: $spacing-lg;
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0 $spacing-md;
+	
+	@include respond-to(md) {
+		max-width: 1200px;
+		padding: 0 $spacing-lg;
+	}
+}
+
+// 布局类
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-align-center {
+	display: flex;
+	align-items: center;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+// 响应式网格
+.grid {
+	display: grid;
+	gap: $spacing-md;
+	
+	&.grid-1 { grid-template-columns: 1fr; }
+	&.grid-2 { grid-template-columns: repeat(2, 1fr); }
+	&.grid-3 { grid-template-columns: repeat(3, 1fr); }
+	&.grid-4 { grid-template-columns: repeat(4, 1fr); }
+	&.grid-5 { grid-template-columns: repeat(5, 1fr); }
+	
+	// 响应式调整
+	@include max-width($breakpoint-sm) {
+		&.grid-5 { grid-template-columns: repeat(3, 1fr); }
+		&.grid-4 { grid-template-columns: repeat(3, 1fr); }
+		&.grid-3 { grid-template-columns: repeat(2, 1fr); }
+	}
+	
+	@include max-width(400px) {
+		&.grid-5 { grid-template-columns: repeat(2, 1fr); }
+		&.grid-4 { grid-template-columns: repeat(2, 1fr); }
+		&.grid-3 { grid-template-columns: repeat(2, 1fr); }
+	}
+}
+
+// 文字对齐
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+// 文字大小（响应式）
+.text-xs { 
+	font-size: $font-size-xs; 
+	@include respond-to(md) { font-size: $font-size-sm; }
+}
+.text-sm { 
+	font-size: $font-size-sm; 
+	@include respond-to(md) { font-size: $font-size-md; }
+}
+.text-md { 
+	font-size: $font-size-md; 
+	@include respond-to(md) { font-size: $font-size-lg; }
+}
+.text-lg { 
+	font-size: $font-size-lg; 
+	@include respond-to(md) { font-size: $font-size-xl; }
+}
+.text-xl { 
+	font-size: $font-size-xl; 
+	@include respond-to(md) { font-size: $font-size-xxl; }
+}
+
+// 文字颜色
+.text-primary { color: $text-primary; }
+.text-secondary { color: $text-secondary; }
+.text-placeholder { color: $text-placeholder; }
+.text-disabled { color: $text-disabled; }
+
+// 文字省略
+.text-ellipsis { @include text-ellipsis(1); }
+.text-ellipsis-2 { @include text-ellipsis(2); }
+.text-ellipsis-3 { @include text-ellipsis(3); }
+
+// 间距（响应式）
+@each $size, $value in (xs: $spacing-xs, sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg, xl: $spacing-xl) {
+	.m-#{$size} { margin: $value; }
+	.mt-#{$size} { margin-top: $value; }
+	.mb-#{$size} { margin-bottom: $value; }
+	.ml-#{$size} { margin-left: $value; }
+	.mr-#{$size} { margin-right: $value; }
+	.mx-#{$size} { margin-left: $value; margin-right: $value; }
+	.my-#{$size} { margin-top: $value; margin-bottom: $value; }
+	
+	.p-#{$size} { padding: $value; }
+	.pt-#{$size} { padding-top: $value; }
+	.pb-#{$size} { padding-bottom: $value; }
+	.pl-#{$size} { padding-left: $value; }
+	.pr-#{$size} { padding-right: $value; }
+	.px-#{$size} { padding-left: $value; padding-right: $value; }
+	.py-#{$size} { padding-top: $value; padding-bottom: $value; }
+}
+
+// 圆角
+.rounded-none { border-radius: 0; }
+.rounded-sm { border-radius: $border-radius-sm; }
+.rounded-md { border-radius: $border-radius-md; }
+.rounded-lg { border-radius: $border-radius-lg; }
+.rounded-xl { border-radius: $border-radius-xl; }
+.rounded-full { border-radius: 50%; }
+
+// 阴影
+.shadow-none { box-shadow: none; }
+.shadow-sm { box-shadow: $shadow-sm; }
+.shadow-md { box-shadow: $shadow-md; }
+.shadow-lg { box-shadow: $shadow-lg; }
+
+// 安全区域
+.safe-area-top { @include safe-area-top; }
+.safe-area-bottom { @include safe-area-bottom; }
+.safe-area-left { @include safe-area-left; }
+.safe-area-right { @include safe-area-right; }
+
+// 显示/隐藏
+.hidden { display: none !important; }
+.visible { display: block !important; }
+
+// 响应式显示/隐藏
+.hidden-xs { @include max-width($breakpoint-sm) { display: none !important; } }
+.hidden-sm { @include respond-to(sm) { display: none !important; } }
+.hidden-md { @include respond-to(md) { display: none !important; } }
+.hidden-lg { @include respond-to(lg) { display: none !important; } }
+.hidden-xl { @include respond-to(xl) { display: none !important; } }
+
+.visible-xs { @include min-width($breakpoint-sm) { display: none !important; } }
+.visible-sm { 
+	display: none !important;
+	@include respond-to(sm) { display: block !important; }
+}
+.visible-md { 
+	display: none !important;
+	@include respond-to(md) { display: block !important; }
+}
+
+// 平台特定样式
+/* #ifdef H5 */
+.h5-only { display: block; }
+.app-only, .mp-only { display: none; }
+/* #endif */
+
+/* #ifdef APP-PLUS */
+.app-only { display: block; }
+.h5-only, .mp-only { display: none; }
+/* #endif */
+
+/* #ifdef MP */
+.mp-only { display: block; }
+.h5-only, .app-only { display: none; }
+/* #endif */
+
+/* tab 页 scroll-view 内层：内容自然撑开，仅保留少量底部呼吸间距 */
+.tab-scroll-inner {
+	box-sizing: border-box;
+	padding-bottom: 24rpx;
+}
+
+// 1px边框
+.border-1px-top { @include border-1px($border-color, top); }
+.border-1px-bottom { @include border-1px($border-color, bottom); }
+.border-1px-left { @include border-1px($border-color, left); }
+.border-1px-right { @include border-1px($border-color, right); }
+.border-1px-all { @include border-1px($border-color, all); }
+
+// 卡片样式（响应式）
+.card {
+	background-color: $bg-primary;
+	border-radius: $border-radius-lg;
+	box-shadow: $shadow-sm;
+	padding: $spacing-md;
+	margin-bottom: $spacing-md;
+	
+	@include respond-to(md) {
+		padding: $spacing-lg;
+		margin-bottom: $spacing-lg;
+	}
+}
+
+// 按钮样式（响应式）
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: $spacing-sm $spacing-md;
+	border-radius: $border-radius-md;
+	font-size: $font-size-md;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	min-height: 44px; // 确保触摸区域足够大
+	
+	@include respond-to(md) {
+		padding: $spacing-md $spacing-lg;
+		font-size: $font-size-lg;
+		min-height: 48px;
+	}
+	
+	&.btn-primary {
+		background-color: $primary-color;
+		color: white;
+		
+		&:hover, &:active {
+			opacity: 0.8;
+		}
+	}
+	
+	&.btn-secondary {
+		background-color: $bg-tertiary;
+		color: $text-primary;
+		
+		&:hover, &:active {
+			background-color: $border-color;
+		}
+	}
+	
+	&.btn-danger {
+		background-color: $danger-color;
+		color: white;
+		
+		&:hover, &:active {
+			opacity: 0.8;
+		}
+	}
+	
+	&.btn-small {
+		padding: $spacing-xs $spacing-sm;
+		font-size: $font-size-sm;
+		min-height: 32px;
+	}
+	
+	&.btn-large {
+		padding: $spacing-md $spacing-xl;
+		font-size: $font-size-lg;
+		min-height: 52px;
+	}
+}
+
+// 列表样式（响应式）
+.list-item {
+	display: flex;
+	align-items: center;
+	padding: $spacing-md;
+	background-color: $bg-primary;
+	@include border-1px($border-light, bottom);
+	min-height: 60px; // 确保触摸区域足够大
+	
+	@include respond-to(md) {
+		padding: $spacing-lg;
+		min-height: 72px;
+	}
+	
+	&:last-child::after {
+		display: none;
+	}
+	
+	&:active {
+		background-color: $bg-secondary;
+	}
+}
+
+.list-item-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.list-item-title {
+	font-size: $font-size-lg;
+	color: $text-primary;
+	margin-bottom: $spacing-xs;
+	@include text-ellipsis(1);
+	
+	@include respond-to(md) {
+		font-size: $font-size-xl;
+	}
+}
+
+.list-item-subtitle {
+	font-size: $font-size-sm;
+	color: $text-secondary;
+	@include text-ellipsis(2);
+	
+	@include respond-to(md) {
+		font-size: $font-size-md;
+	}
+}
+
+.list-item-arrow {
+	width: 20px;
+	height: 20px;
+	margin-left: $spacing-sm;
+	
+	@include respond-to(md) {
+		width: 24px;
+		height: 24px;
+	}
+}

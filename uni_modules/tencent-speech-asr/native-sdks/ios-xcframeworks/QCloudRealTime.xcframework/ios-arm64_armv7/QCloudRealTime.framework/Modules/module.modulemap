@@ -1,0 +1,12 @@
+framework module QCloudRealTime {
+  header "QCloudAudioDataSource.h"
+  header "QCloudAudioRecorderDataSource.h"
+  header "QCloudCommonParams.h"
+  header "QCloudConfig.h"
+  header "QCloudContextPrompt.h"
+  header "QCloudMacrosDefine.h"
+  header "QCloudRealTimeRecognizer.h"
+  header "QCloudRealTimeResult.h"
+  header "sdk_version.h"
+  export *
+}
