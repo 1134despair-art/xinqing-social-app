@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EBC35FD29D138BD009F68BB /* QCloudSDKDemoSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC35FC29D138BD009F68BB /* QCloudSDKDemoSwiftApp.swift */; };
+		7EBC35FF29D138BD009F68BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC35FE29D138BD009F68BB /* ContentView.swift */; };
+		7EBC360129D138BE009F68BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC360029D138BE009F68BB /* Assets.xcassets */; };
+		7EBC360429D138BE009F68BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC360329D138BE009F68BB /* Preview Assets.xcassets */; };
+		7EBC360E29D14531009F68BB /* RealTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC360D29D14531009F68BB /* RealTimeView.swift */; };
+		7EBC361129D15244009F68BB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBC361029D15244009F68BB /* libc++.tbd */; };
+		7EBC361329D18989009F68BB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC361229D18989009F68BB /* Config.swift */; };
+		A04F8F142E69751300050E31 /* OneSentenceRecognizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F8F132E69751300050E31 /* OneSentenceRecognizeView.swift */; };
+		A04F8F162E69752700050E31 /* FlashFileRecognizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F8F152E69752700050E31 /* FlashFileRecognizeView.swift */; };
+		A04F8F212E69939F00050E31 /* recordaudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A04F8F1A2E69939F00050E31 /* recordaudio.mp3 */; };
+		A04F8F222E69939F00050E31 /* test2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A04F8F1F2E69939F00050E31 /* test2.wav */; };
+		A04F8F232E69939F00050E31 /* test2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A04F8F1E2E69939F00050E31 /* test2.mp3 */; };
+		A04F8F242E69939F00050E31 /* test1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A04F8F1D2E69939F00050E31 /* test1.mp3 */; };
+		A04F8F252E69939F00050E31 /* 30s.wav in Resources */ = {isa = PBXBuildFile; fileRef = A04F8F192E69939F00050E31 /* 30s.wav */; };
+		A04F8F262E69939F00050E31 /* recordedFile.wav in Resources */ = {isa = PBXBuildFile; fileRef = A04F8F1B2E69939F00050E31 /* recordedFile.wav */; };
+		A04F8F272E69939F00050E31 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = A04F8F1C2E69939F00050E31 /* test.wav */; };
+		A07590D72E6ED5DB00AF2E58 /* QCloudFileRecognizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07590D42E6ED5DB00AF2E58 /* QCloudFileRecognizer.xcframework */; };
+		A07590D82E6ED5DB00AF2E58 /* QCloudOneSentence.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07590D52E6ED5DB00AF2E58 /* QCloudOneSentence.xcframework */; };
+		A07590D92E6ED5DB00AF2E58 /* QCloudRealTime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07590D62E6ED5DB00AF2E58 /* QCloudRealTime.xcframework */; };
+		A0DDA4822E6ED44400111C0C /* VoiceCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DDA4812E6ED44400111C0C /* VoiceCommon.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7EBC35F929D138BD009F68BB /* QCloudSDKDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QCloudSDKDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBC35FC29D138BD009F68BB /* QCloudSDKDemoSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCloudSDKDemoSwiftApp.swift; sourceTree = "<group>"; };
+		7EBC35FE29D138BD009F68BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7EBC360029D138BE009F68BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EBC360329D138BE009F68BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7EBC360D29D14531009F68BB /* RealTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeView.swift; sourceTree = "<group>"; };
+		7EBC360F29D14EF7009F68BB /* QCloudSDKDemoSwift-Bridge-Objective-C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QCloudSDKDemoSwift-Bridge-Objective-C.h"; sourceTree = "<group>"; };
+		7EBC361029D15244009F68BB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7EBC361229D18989009F68BB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A04F8F132E69751300050E31 /* OneSentenceRecognizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSentenceRecognizeView.swift; sourceTree = "<group>"; };
+		A04F8F152E69752700050E31 /* FlashFileRecognizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashFileRecognizeView.swift; sourceTree = "<group>"; };
+		A04F8F192E69939F00050E31 /* 30s.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 30s.wav; sourceTree = "<group>"; };
+		A04F8F1A2E69939F00050E31 /* recordaudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = recordaudio.mp3; sourceTree = "<group>"; };
+		A04F8F1B2E69939F00050E31 /* recordedFile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = recordedFile.wav; sourceTree = "<group>"; };
+		A04F8F1C2E69939F00050E31 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		A04F8F1D2E69939F00050E31 /* test1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test1.mp3; sourceTree = "<group>"; };
+		A04F8F1E2E69939F00050E31 /* test2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test2.mp3; sourceTree = "<group>"; };
+		A04F8F1F2E69939F00050E31 /* test2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test2.wav; sourceTree = "<group>"; };
+		A07590D42E6ED5DB00AF2E58 /* QCloudFileRecognizer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = QCloudFileRecognizer.xcframework; path = Frameworks/QCloudFileRecognizer.xcframework; sourceTree = "<group>"; };
+		A07590D52E6ED5DB00AF2E58 /* QCloudOneSentence.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = QCloudOneSentence.xcframework; path = Frameworks/QCloudOneSentence.xcframework; sourceTree = "<group>"; };
+		A07590D62E6ED5DB00AF2E58 /* QCloudRealTime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = QCloudRealTime.xcframework; path = Frameworks/QCloudRealTime.xcframework; sourceTree = "<group>"; };
+		A0DDA4812E6ED44400111C0C /* VoiceCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VoiceCommon.xcframework; path = Frameworks/VoiceCommon.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EBC35F629D138BD009F68BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07590D72E6ED5DB00AF2E58 /* QCloudFileRecognizer.xcframework in Frameworks */,
+				A07590D82E6ED5DB00AF2E58 /* QCloudOneSentence.xcframework in Frameworks */,
+				A07590D92E6ED5DB00AF2E58 /* QCloudRealTime.xcframework in Frameworks */,
+				A0DDA4822E6ED44400111C0C /* VoiceCommon.xcframework in Frameworks */,
+				7EBC361129D15244009F68BB /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EBC35F029D138BD009F68BB = {
+			isa = PBXGroup;
+			children = (
+				7EBC35FB29D138BD009F68BB /* QCloudSDKDemoSwift */,
+				7EBC35FA29D138BD009F68BB /* Products */,
+				7EBC360A29D13A58009F68BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7EBC35FA29D138BD009F68BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC35F929D138BD009F68BB /* QCloudSDKDemoSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EBC35FB29D138BD009F68BB /* QCloudSDKDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A04F8F202E69939F00050E31 /* resource */,
+				A04F8F152E69752700050E31 /* FlashFileRecognizeView.swift */,
+				A04F8F132E69751300050E31 /* OneSentenceRecognizeView.swift */,
+				7EBC360D29D14531009F68BB /* RealTimeView.swift */,
+				7EBC35FC29D138BD009F68BB /* QCloudSDKDemoSwiftApp.swift */,
+				7EBC35FE29D138BD009F68BB /* ContentView.swift */,
+				7EBC360029D138BE009F68BB /* Assets.xcassets */,
+				7EBC360229D138BE009F68BB /* Preview Content */,
+				7EBC360F29D14EF7009F68BB /* QCloudSDKDemoSwift-Bridge-Objective-C.h */,
+				7EBC361229D18989009F68BB /* Config.swift */,
+			);
+			path = QCloudSDKDemoSwift;
+			sourceTree = "<group>";
+		};
+		7EBC360229D138BE009F68BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC360329D138BE009F68BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7EBC360A29D13A58009F68BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A07590D42E6ED5DB00AF2E58 /* QCloudFileRecognizer.xcframework */,
+				A07590D52E6ED5DB00AF2E58 /* QCloudOneSentence.xcframework */,
+				A07590D62E6ED5DB00AF2E58 /* QCloudRealTime.xcframework */,
+				A0DDA4812E6ED44400111C0C /* VoiceCommon.xcframework */,
+				7EBC361029D15244009F68BB /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A04F8F202E69939F00050E31 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				A04F8F192E69939F00050E31 /* 30s.wav */,
+				A04F8F1A2E69939F00050E31 /* recordaudio.mp3 */,
+				A04F8F1B2E69939F00050E31 /* recordedFile.wav */,
+				A04F8F1C2E69939F00050E31 /* test.wav */,
+				A04F8F1D2E69939F00050E31 /* test1.mp3 */,
+				A04F8F1E2E69939F00050E31 /* test2.mp3 */,
+				A04F8F1F2E69939F00050E31 /* test2.wav */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EBC35F829D138BD009F68BB /* QCloudSDKDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBC360729D138BE009F68BB /* Build configuration list for PBXNativeTarget "QCloudSDKDemoSwift" */;
+			buildPhases = (
+				7EBC35F529D138BD009F68BB /* Sources */,
+				7EBC35F629D138BD009F68BB /* Frameworks */,
+				7EBC35F729D138BD009F68BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCloudSDKDemoSwift;
+			productName = QCloudSDKDemoSwift;
+			productReference = 7EBC35F929D138BD009F68BB /* QCloudSDKDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EBC35F129D138BD009F68BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					7EBC35F829D138BD009F68BB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7EBC35F429D138BD009F68BB /* Build configuration list for PBXProject "QCloudSDKDemoSwift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EBC35F029D138BD009F68BB;
+			productRefGroup = 7EBC35FA29D138BD009F68BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EBC35F829D138BD009F68BB /* QCloudSDKDemoSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EBC35F729D138BD009F68BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04F8F212E69939F00050E31 /* recordaudio.mp3 in Resources */,
+				A04F8F222E69939F00050E31 /* test2.wav in Resources */,
+				A04F8F232E69939F00050E31 /* test2.mp3 in Resources */,
+				A04F8F242E69939F00050E31 /* test1.mp3 in Resources */,
+				A04F8F252E69939F00050E31 /* 30s.wav in Resources */,
+				A04F8F262E69939F00050E31 /* recordedFile.wav in Resources */,
+				A04F8F272E69939F00050E31 /* test.wav in Resources */,
+				7EBC360429D138BE009F68BB /* Preview Assets.xcassets in Resources */,
+				7EBC360129D138BE009F68BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EBC35F529D138BD009F68BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBC360E29D14531009F68BB /* RealTimeView.swift in Sources */,
+				7EBC361329D18989009F68BB /* Config.swift in Sources */,
+				A04F8F162E69752700050E31 /* FlashFileRecognizeView.swift in Sources */,
+				A04F8F142E69751300050E31 /* OneSentenceRecognizeView.swift in Sources */,
+				7EBC35FF29D138BD009F68BB /* ContentView.swift in Sources */,
+				7EBC35FD29D138BD009F68BB /* QCloudSDKDemoSwiftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7EBC360529D138BE009F68BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EBC360629D138BE009F68BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EBC360829D138BE009F68BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QCloudSDKDemoSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = F7S53Z58QE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Must;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.cloud.iai.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.tencent.cloud.iai.demo_Development_SignProvision;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QCloudSDKDemoSwift/QCloudSDKDemoSwift-Bridge-Objective-C.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EBC360929D138BE009F68BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QCloudSDKDemoSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = F7S53Z58QE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Must;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.cloud.iai.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.tencent.cloud.iai.demo_Development_SignProvision;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QCloudSDKDemoSwift/QCloudSDKDemoSwift-Bridge-Objective-C.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EBC35F429D138BD009F68BB /* Build configuration list for PBXProject "QCloudSDKDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBC360529D138BE009F68BB /* Debug */,
+				7EBC360629D138BE009F68BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBC360729D138BE009F68BB /* Build configuration list for PBXNativeTarget "QCloudSDKDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBC360829D138BE009F68BB /* Debug */,
+				7EBC360929D138BE009F68BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EBC35F129D138BD009F68BB /* Project object */;
+}
