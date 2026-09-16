@@ -3,7 +3,6 @@
 /dist/*
 .DS_Store
 /unpackage/*
-/utils/tencentSpeechAsr.dev.local.js
 /pnpm-workspace.yaml
 
 .idea/*

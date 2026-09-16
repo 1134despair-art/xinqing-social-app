@@ -1,6 +1,5 @@
 import { getCurrentPlatform } from '@/utils/adapt';
 import { getTencentRealtimeSpeechCredential as requestTencentRealtimeSpeechCredential } from '@/api/speech';
-import { getTencentRealtimeSpeechLocalDevCredential } from '@/utils/tencentSpeechAsr.dev.local';
 // #ifdef APP-PLUS
 import * as appSpeechModule from '@/uni_modules/tencent-speech-asr';
 // #endif
@@ -53,10 +52,10 @@ export function getTencentRealtimeSpeechDevCredential() {
 		if (isValidCredential(storageCredential)) {
 			return storageCredential;
 		}
-		return normalizeCredential(getTencentRealtimeSpeechLocalDevCredential() || {});
 	} catch (e) {
-		return normalizeCredential(getTencentRealtimeSpeechLocalDevCredential() || {});
+		/* ignore */
 	}
+	return normalizeCredential();
 }
 
 export function setTencentRealtimeSpeechDevCredential(credential = {}) {
